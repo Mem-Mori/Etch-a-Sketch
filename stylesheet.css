@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(221, 221, 221);
+}
+
+#header {
+    width: 420px;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: rgb(105, 105, 105);
+}
+
+#input {
+    height: 50px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h1#title {
+    margin: 0px;
+    margin-bottom: 20px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#tag {
+    font-size: 30px;
+    margin: 10px 20px;
+}
+
+.value {
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#gridSize {
+    -webkit-appearance: none;
+    background: whitesmoke;
+    outline: none;
+    border: 2px rgb(105, 105, 105) solid;
+    border-radius: 10px;
+    width: 150px;
+    height: 10px;
+    margin-top: 10px 0px;
+}
+
+#gridSize::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: slategray;
+    border: 2px rgb(80, 80, 80) solid;
+    border-radius: 50%;
+}
+
+#gridSize::-webkit-slider-thumb:active {
+    transform: scale(.9);
+}
+
+#buttons {
+    display: inline;
+    margin-bottom: 25px;
+}
+
+#text1 {
+    display: inline;
+    color: rgb(105, 105, 105);
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    margin: 0px;
+}
+
+.buttons {
+    -webkit-appearance: none;
+    background-color: rgb(190, 190, 190);
+    color: rgb(105, 105, 105);
+    width: 100px;
+    height: 50px;
+    padding-left: 8px;
+    margin: 0px 20px 0px;
+    border: 2px rgb(105, 105, 105) solid;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+.butActive {
+    outline: none;
+    border: 2px whitesmoke solid;
+    background-color: rgb(83, 89, 95);
+    color: white;
+}
+
+#reset:active {
+    transform: translateY(4px);
+    outline: none;
+    transform: scale(.9);
+}
+
+#rgb:active {
+    transform: translateY(4px);
+    outline: none;
+    transform: scale(.9);
+}
+
+#reset:hover {
+    border: 2px whitesmoke solid;
+    background-color: rgb(83, 89, 95);
+    color: white;
+}
+
+.rgbActive {
+    outline: none;
+    border: 2px whitesmoke solid;
+    color: white;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.699), rgba(255, 166, 0, 0.699), rgba(255, 255, 0, 0.699), rgba(0, 128, 0, 0.699), rgba(0, 0, 255, 0.699), rgba(76, 0, 130, 0.699), rgba(238, 130, 238, 0.699));
+}
+
+#rgb:hover {
+    border: 2px whitesmoke solid;
+    color: white;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.699), rgba(255, 166, 0, 0.699), rgba(255, 255, 0, 0.699), rgba(0, 128, 0, 0.699), rgba(0, 0, 255, 0.699), rgba(76, 0, 130, 0.699), rgba(238, 130, 238, 0.699));
+}
+
+#container{
+    display: inline-grid;
+    grid-template-columns: repeat(25, 2fr);
+    grid-template-rows: repeat(25, 2fr);
+    height: 575px;
+    width: 575px;
+    padding: 3px;
+    border: 8px rgb(105, 105, 105) double;
+    background-color: whitesmoke;
+}
+
+.content {
+    background-color: whitesmoke;
+    float: left;
+}
+
+div.content2 {
+    background-color: rgb(83, 89, 95);
+}
+
+#TOP {
+    color: rgb(83, 89, 95);
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    margin: -10px;
+}
+
+#TOP2 {
+    color: rgb(83, 89, 95);
+}
+
+#TOP2:hover {
+    color: brown;
+}
